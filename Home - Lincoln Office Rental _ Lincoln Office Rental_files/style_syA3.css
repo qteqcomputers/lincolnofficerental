@@ -1,0 +1,720 @@
+/*
+	Theme Name: Time42 Coaching
+	Description: Time42 Coaching
+	Version: 1.0
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+	Author: Kevin Brown Design
+	Author URI: https://kevinbrowndesign.com
+*/
+
+/* Reset */
+:link,:visited {text-decoration: none;}
+ul,ol {list-style: none;}
+h1,h2,h3,h4,h5,h6,pre,code,p {font-size: 1em;}
+ul,ol,dl,li,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input {margin: 0; padding: 0;}
+a img,:link img,:visited img {border: none;}
+address {font-style: normal;}
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 20px 0px 10px 0;
+	font-weight: normal;
+}
+
+h1 {
+	font: 700 28px Verdana;
+	line-height: 1.15em;
+	margin: 0 0 14px 0;
+}
+
+h2 {
+	font: 22px Verdana;
+	margin: 0 0 13px 0;
+}
+
+h3 {
+	font: 16.8px Verdana;
+	margin: 0 0 13px 0;
+}
+
+h4 {
+	font-size: 14px;
+	font-style: italic;
+	line-height: 1.45em;
+	margin: 0 0 15px 0;
+}
+
+/* Links */
+
+a:link, a:visited, a:active {
+	color: #000;
+	text-decoration: underline;
+	-webkit-transition: all 350ms;
+	transition: all 350ms;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* Paragraphs */
+
+p {
+	margin: 0 0 10px 0;
+	line-height: 1.45em;
+}
+
+.alignleft {
+	float: left;
+	display: inline;
+	margin: 0 48px 25px 0;
+}
+
+.alignright {
+	float: right;
+	display: inline;
+	margin: 0 0 25px 48px;
+}
+
+.aligncenter {
+	display: block;
+	margin: 0 auto 25px auto;
+}
+
+/* Lists */
+
+ul {
+	margin: 12px 0 10px 20px;
+}
+
+ul li {
+	list-style: disc;
+	margin: 0 0 4px 0;
+	line-height: 1.45em;
+}
+
+ol {
+	margin: 20px 0 20px 35px;
+}
+
+ol li {
+	list-style: decimal;
+	margin: 0 0 5px 0;
+	line-height: 1.4em;
+}
+
+/* Clearfix */
+
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/* Layout */
+
+body {
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #000;
+	background: #182535 url('/web/20240121094316im_/https://lincolnofficerental.com/wp-content/themes/oneteq/i/page-background.jpg') repeat-x fixed left top;
+	padding: 40px 0;
+}
+
+table {
+	width: 100%;
+	margin: 30px 0 12px 0;
+}
+
+td {
+	vertical-align: top;
+	line-height: 1.45em;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+iframe {
+	max-width: 100%;
+}
+
+.frame {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+	background: #FFF;
+	border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 17px 20px 30px;
+}
+
+.logo img {
+	display: block;
+}
+
+#menu-button {
+	display: none;
+}
+
+.header-contacts {
+	font-size: 32px;
+	letter-spacing: -1px;
+	color: #595959;
+}
+
+.header-contacts p {
+	line-height: 1.2em;
+	margin: 0;
+}
+
+.header-contacts a:link, .header-contacts a:visited {
+	color: #595959;
+	text-decoration: none;
+}
+
+.main-nav {
+	background: #282828;
+}
+
+.main-nav>ul {
+	display: flex;
+	margin: 0;
+}
+
+.main-nav>ul>li {
+	list-style: none;
+	margin: 0;
+	font: 13.2px Verdana;
+	border-right: 1px solid #000;
+}
+
+.main-nav>ul>li>a:link, .main-nav>ul>li>a:visited {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #FFF;
+	text-decoration: none;
+	background: #404040;
+	padding: 13px 12px;
+}
+
+.welcome {
+	background: #595959 url('/web/20240121094316im_/https://lincolnofficerental.com/wp-content/themes/oneteq/i/welcome-background.jpg') repeat-x;
+	padding: 3px 0 0 0;
+	display: flex;
+	border-bottom: 5px solid rgb(64,64,64);
+}
+
+.slider-area {
+	width: 77%;
+}
+
+.slider {
+	position: relative;
+	height: 0;
+	padding: 0 0 48.64% 0;
+}
+
+.slide {
+	position: absolute;
+	width: 100% !important;
+	height: 100% !important;
+	overflow: hidden;
+}
+
+.slide img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: block;
+	width: 100%;
+	height: auto;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+
+.slider-nav {
+	border-style: solid;
+	border-color: #FFF;
+	border-width: 3px 3px 0 0;
+	content: '';
+	display: inline-block;
+	transform: rotate(-135deg);
+	position: relative;
+	top: 0.15em;
+	vertical-align: top;
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	top: calc(50% - 10px);
+	z-index: 110;
+	text-indent: -100em;
+	overflow: hidden;
+	opacity: 0.3;
+}
+
+.slider-nav:hover {
+	opacity: 1;
+}
+
+.slider-nav:focus {
+	outline: none;
+}
+
+.slider-prev {
+	left: 15px;
+}
+
+.slider-next {
+	right: 12px;
+	transform: rotate(45deg);
+}
+
+.welcome-message {
+	width: 23%;
+	color: #d4d4d4;
+	padding: 27px 10px 27px 18px;
+}
+
+.welcome-message * {
+	color: #d4d4d4;
+}
+
+.welcome-message p {
+	margin-bottom: 45px;
+}
+
+.welcome-message>:last-child {
+	margin-bottom: 0;
+}
+
+.columns {
+	display: flex;
+}
+
+.sidebar {
+	width: 220px;
+	background-color: #e5e5e5;
+	background-repeat: repeat-y;
+	padding: 20px 15px;
+}
+
+.left-sidebar {
+	background-image: url('/web/20240121094316im_/https://lincolnofficerental.com/wp-content/themes/oneteq/i/shadow-right.png');
+	background-position: 100% 0;
+}
+
+.right-sidebar {
+	background-image: url('/web/20240121094316im_/https://lincolnofficerental.com/wp-content/themes/oneteq/i/shadow-left.png');
+	padding-top: 27px;
+}
+
+.content {
+	width: calc(100% - 440px);
+}
+
+.breadcrumbs {
+	color: #404040;
+	border-bottom: dotted 1px #c7c7c7;
+	padding: 11px 15px;
+	font-size: 10.8px;
+	font-weight: 700;
+}
+
+.breadcrumbs a:link, .breadcrumbs a:visited {
+	color: #404040;
+	text-decoration: none;
+}
+
+.indent {
+	padding: 25px 15px 22px 15px;
+}
+
+.footer {
+	border-top: 1px solid rgb(179,179,179);
+	padding: 15px 20px;
+	font-size: 10.8px;
+}
+
+.footer>:last-child {
+	margin-bottom: 0;
+}
+
+/* Responsive Menu */
+
+html, .container, .scroller {
+	height: 100%;
+}
+.scroller {
+	overflow: hidden;
+}
+.mp-pushed .scroller {
+	overflow-y: hidden;
+}
+.scroller,
+.scroller-inner {
+	position: relative;
+}
+.container {
+	position: relative;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	z-index: 2;
+}
+.pusher {
+	position: relative;
+	left: 0;
+	height: 100%;
+	perspective: 1000px;
+}
+
+/* Side Menu Layout */
+.side-menu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	width: 290px;
+	height: 100%;
+	overflow: hidden;
+	background: #fff;
+	-webkit-transform: translate3d(100%, 0, 0);
+	-moz-transform: translate3d(100%, 0, 0);
+	transform: translate3d(100%, 0, 0);
+}
+.mp-level {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	-webkit-transform: translate3d(-100%, 0, 0);
+	-moz-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+}
+.mp-level:first-child {
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+/* overlays for pusher and for level that gets covered */
+.pusher::after,
+.mp-level::after,
+.mp-level::before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	content: '';
+	opacity: 0;
+}
+.pusher::after {
+	z-index: 999;
+}
+.pusher::after,
+.mp-level::after {
+	background: rgba(0,0,0,0.3);
+	-webkit-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+	-moz-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+	transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+}
+.mp-level::after {
+	z-index: -1;
+}
+.pusher.mp-pushed::after,
+.mp-level.mp-level-overlay::after {
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+.mp-level.mp-level-overlay {
+	cursor: pointer;
+}
+.mp-level.mp-level-overlay.mp-level::before {
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	opacity: 1;
+}
+.pusher,
+.mp-level {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+/* overlap */
+.mp-overlap .mp-level.mp-level-open {
+	box-shadow: 1px 0 2px rgba(0,0,0,0.2);
+	-webkit-transform: translate3d(-40px, 0, 0);
+	-moz-transform: translate3d(-40px, 0, 0);
+	transform: translate3d(-40px, 0, 0);
+}
+/* First level */
+.side-menu > .mp-level,
+.side-menu > .mp-level.mp-level-open,
+.side-menu.mp-overlap > .mp-level,
+.side-menu.mp-overlap > .mp-level.mp-level-open {
+	box-shadow: none;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+/* cover */
+.mp-cover .mp-level.mp-level-open {
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.mp-cover .mp-level.mp-level-open > ul > li > .mp-level:not(.mp-level-open) {
+	-webkit-transform: translate3d(-100%, 0, 0);
+	-moz-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+}
+/* Side Menu Styling */
+.side-menu {
+	display: block;
+}
+.side-menu li:before, .side-menu li:after {
+	display: none;
+}
+.the-side-menu {
+	margin: 0 0 40px 0;
+}
+.the-side-menu>.mp-level ul li>a:link, .the-side-menu>.mp-level ul li>a:visited {
+	display: block;
+	font-size: 20px;
+	font-weight: 700;
+	color: #000 !important;
+	text-decoration: none;
+	text-align: center;
+	padding: 14px 10px;
+	letter-spacing: 1px;
+}
+a.mp-back:link, a.mp-back:visited {
+	display: block;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	background: #000;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 25px 10px 25px;
+	position: relative;
+	letter-spacing: 1px;
+}
+a.mp-back:link:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	border-right: 6px solid #fff;
+	border-top: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	margin: -4px 0 0 0;
+}
+.the-side-menu>.mp-level ul li>a>span {
+	position: relative;
+}
+.the-side-menu ul li:before {
+	display: none;
+}
+.the-side-menu ul li {
+	padding-left: 0;
+	position: static;
+}
+.the-side-menu>.mp-level ul li.menu-item-has-children>a>span {
+	padding-right: 39px;
+	margin: 0 -30px 0 0;
+}
+.the-side-menu>.mp-level ul li.menu-item-has-children>a>span:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 26px;
+	border-top: 5px solid #e2e2e2;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	margin: -3px 0 0 0;
+	-webkit-transition: color 250ms ease, background-color 250ms ease, border-color 250ms ease, opacity 250ms ease;
+	transition: color 250ms ease, background-color 250ms ease, border-color 250ms ease, opacity 250ms ease;
+}
+.the-side-menu>.mp-level ul li.current-menu-item>a, .the-side-menu>.mp-level ul li.current-menu-parent>a, .the-side-menu>.mp-level ul li.current-menu-ancestor>a,
+.the-side-menu>.mp-level ul li.open {
+	background: #000;
+	color: #fff !important;
+}
+.the-side-menu>.mp-level ul li>a:hover {
+	background: #000;
+	color: #fff !important;
+}
+.the-side-menu>.mp-level ul li.menu-item-has-children>a:hover>span:before,
+.the-side-menu>.mp-level ul li.open>a>span:before {
+	border-top-color: #FFF;
+}
+.the-side-menu>.mp-level ul li.current-menu-item a:link, .the-side-menu>.mp-level ul li.current-menu-item a:visited,
+.the-side-menu>.mp-level ul li.current-menu-item a:link, .the-side-menu>.mp-level ul li.current-menu-parent a:visited,
+.the-side-menu>.mp-level ul li.current-menu-ancestor a:link, .the-side-menu>.mp-level ul li.current-menu-ancestor a:visited,
+.the-side-menu>.mp-level ul li.open a:link, .the-side-menu>.mp-level ul li.open a:visited {
+	color: #FFF;
+}
+.the-side-menu>.mp-level ul li.current-menu-item>a>span:after,
+.the-side-menu>.mp-level ul li.current-menu-parent>a>span:after,
+.the-side-menu>.mp-level ul li.current-menu-anestor>a>span:after,
+.the-side-menu>.mp-level ul li.current_page_item>a>span:after,
+.the-side-menu>.mp-level ul li.current_page_parent>a>span:after,
+.the-side-menu>.mp-level ul li.current_page_anestor>a>span:after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -7px;
+	left: 0;
+	right: 0;
+	height: 3px;
+	background: #000;
+}
+.the-side-menu>.mp-level ul li.menu-item-has-children>a>span:after {
+	right: 39px;
+}
+.mp-menu-open {
+	z-index: 200;
+}
+.mp-level ul {
+	margin: 0;
+}
+.mp-level li {
+	list-style: none;
+	margin: 0;
+}
+
+@media (max-width: 999px) {
+	.frame {
+		width: auto !important;
+		margin-left: 20px !important;
+		margin-right: 20px !important;
+	}
+	.header-contacts {
+		font-size: 28px;
+	}
+	.welcome {
+		flex-flow: column nowrap;
+	}
+	.slider-area {
+		width: 100%;
+	}
+	.welcome-message {
+		width: 100%;
+	}
+	.columns {
+		flex-flow: row wrap;
+	}
+	.content {
+		width: calc(100% - 220px);
+	}
+	.right-sidebar {
+		width: 100%;
+		background-image: none;
+		border-top: 1px solid rgb(179,179,179);
+	}
+}
+
+@media (max-width: 599px) {
+	.header {
+		flex-flow: column nowrap;
+		padding: 15px 20px;
+		text-align: center;
+	}
+	.header-contacts {
+		margin: 20px 0 0 0;
+	}
+	.welcome-message p {
+		margin-bottom: 25px;
+	}
+	.content {
+		order: 1;
+		width: 100%;
+	}
+	.left-sidebar {
+		width: 100%;
+		background-image: none;
+		order: 2;
+		border-top: 1px solid rgb(179,179,179);
+	}
+	.right-sidebar {
+		order: 3;
+		border-top: none;
+		padding-top: 0;
+	}
+	table, tbody, tr, td {
+		display: block !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		width: auto !important;
+		height: auto !important;
+	}
+	td {
+		padding: 15px 0 !important;
+	}
+	table.table {
+		display: table !important;
+		max-width: 580px;
+		margin: 0 auto 20px auto !important;
+	}
+	table.table tbody, table.table thead {
+		display: table-row-group !important;
+	}
+	table.table tr {
+		display: table-row !important;
+	}
+	table.table th, table.table td {
+		display: table-cell !important;
+		width: auto !important;
+		padding: 5px 5px !important;
+	}
+}
+/*
+     FILE ARCHIVED ON 09:43:16 Jan 21, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:06:27 Sep 11, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 0.761
+  load_resource: 131.833
+  PetaboxLoader3.resolve: 78.601
+  PetaboxLoader3.datanode: 52.561
+*/
